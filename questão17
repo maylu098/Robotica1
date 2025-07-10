@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+void modificar(int valor, int& referencia) {
+    valor += 10;
+    referencia += 10;
+    cout << "Dentro da funcao -> Valor: " << valor << ", Referencia: " << referencia << endl;
+}
+
+int main() {
+    int a = 5, b = 5;
+
+    modificar(a, b);
+
+    cout << "Apos a funcao -> a (valor): " << a << ", b (referencia): " << b << endl;
+
+    return 0;
+}
+
