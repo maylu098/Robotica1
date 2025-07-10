@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+    void realizarOperacoes(int a, int b) {
+    cout << "Soma: " << (a + b) << endl;
+    cout << "Subtracao: " << (a - b) << endl;
+    cout << "Multiplicacao: " << (a * b) << endl;
+
+    if (b != 0) {
+        cout << "Divisao: " << (a / b) << endl;
+     } else {
+        cout << "Divisao: impossível (divisão por zero)." << endl;
+    }
+}
+
+    int main() {
+    int num1, num2;
+
+    cout << "Digite dois numeros inteiros: ";
+    cin >> num1 >> num2;
+
+    realizarOperacoes(num1, num2);
+
+    return 0;
+}
