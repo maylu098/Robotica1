@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+void dobrarValor(int* ptr) {
+    *ptr *= 2;
+}
+
+int main() {
+    int numero;
+    cout << "Digite um numero: ";
+    cin >> numero;
+
+    dobrarValor(&numero);
+
+    cout << "O dobro do numero e: " << numero << endl;
+    return 0;
+}
