@@ -1,0 +1,59 @@
+#include <iostream>
+
+using namespace std;
+
+
+const double LIMITE_SAQUE = 1000.0;
+const double LIMITE_DEP = 5000.0;
+
+double saldo = 0.0;
+
+void consultarSaldo() {
+    cout << "Saldo atual: R$ " << saldo << endl;
+}
+
+void sacar() {
+    double valor;
+    cout << "Digite valor para saque: R$ ";
+    cin >> valor;
+    if (valor > LIMITE_SAQUE) {
+        cout << "Erro: valor excede o limite de saque (R$ " << LIMITE_SAQUE << ")\n";
+    } else if (valor > saldo) {
+        cout << "Erro: saldo insuficiente.\n";
+    } else {
+        saldo -= valor;
+        cout << "Saque realizado. Novo saldo: R$ " << saldo << endl;
+    }
+}
+
+void depositar() {
+    double valor;
+    cout << "Digite valor para deposito: R$ ";
+    cin >> valor;
+    if (valor > LIMITE_DEP) {
+        cout << "Erro: valor excede o limite de deposito (R$ " << LIMITE_DEP << ")\n";
+    } else {
+        saldo += valor;
+        cout << "Deposito realizado. Novo saldo: R$ " << saldo << endl;
+    }
+}
+
+int main() {
+    int opcao;
+    do {
+        cout << "\n--- CAIXA ELETRONICO ---\n";
+        cout << "1 - Consultar saldo\n2 - Depositar\n3 - Sacar\n0 - Sair\n";
+        cout << "Escolha: ";
+        cin >> opcao;
+
+        switch (opcao) {
+            case 1: consultarSaldo(); break;
+            case 2: depositar(); break;
+            case 3: sacar(); break;
+            case 0: cout << "Encerrando...\n"; break;
+            default: cout << "Opcao invalida!\n";
+        }
+    } while (opcao != 0);
+
+    return 0;
+}
