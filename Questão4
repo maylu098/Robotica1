@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int aInt = 5, bInt = 2;
+    float aFloat = 5.0f, bFloat = 2.0f;
+    double aDouble = 5.0, bDouble = 2.0;
+
+    
+    cout << "Resultado int: " << (aInt / bInt) << endl;
+    cout << "Resultado float: " << (aFloat / bFloat) << endl;
+    cout << "Resultado double: " << (aDouble / bDouble) << endl;
+
+    return 0;
+}
