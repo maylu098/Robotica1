@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    short shortNum = 100;
+    int intNum = 1000;
+    long longNum = 100000;
+    long long longLongNum = 1000000000;
+    
+    float floatNum = 3.14f;
+    double doubleNum = 3.14159;
+    long double longDoubleNum = 3.1415926535;
+
+    char character = 'A';
+
+    bool booleanValue = true;
+
+    cout << "short: " << shortNum << endl;
+    cout << "int: " << intNum << endl;
+    cout << "long: " << longNum << endl;
+    cout << "long long: " << longLongNum << endl;
+    cout << "float: " << floatNum << endl;
+    cout << "double: " << doubleNum << endl;
+    cout << "long double: " << longDoubleNum << endl;
+    cout << "char: " << character << endl;
+    cout << "bool: " << booleanValue << endl;
+
+    return 0;
+}
