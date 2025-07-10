@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int soma(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int num1, num2;
+    cout << "Digite dois numeros inteiros: ";
+    cin >> num1 >> num2;
+
+    cout << "A soma e: " << soma(num1, num2) << endl;
+    return 0;
+}
