@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+ using namespace std;
+
+void exibirMensagem(const string& nome, int idade) {
+    cout << "Ola, " << nome << "! Voce tem " << idade << " anos." << endl;
+}
+
+int main() {
+    string nome;
+    int idade;
+
+    cout << "Digite seu nome: ";
+    getline(cin, nome);  
+    cout << "Digite sua idade: ";
+    cin >> idade;
+
+    exibirMensagem(nome, idade);
+
+    return 0;
