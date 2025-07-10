@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+
+void inverterSinal(int& valor) {
+    valor = -valor;
+}
+
+int main() {
+    int numero;
+    cout << "Digite um numero: ";
+    cin >> numero;
+
+    inverterSinal(numero);
+    cout << "Numero com sinal invertido: " << numero << endl;
+
+    return 0;
+}
