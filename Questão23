@@ -1,0 +1,13 @@
+#include <iostream>
+#include "funcoes.h"
+
+int main() {
+  
+    mostrarInfo();
+
+    std::cout << "Bem-vindo ao programa principal!\n";
+    std::cout << "Aqui podemos adicionar mais funcionalidades.\n";
+
+  
+    return 0;
+}
