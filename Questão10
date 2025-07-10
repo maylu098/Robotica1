@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+
+float maiorValor(float a, float b) {
+    return (a > b) ? a : b;
+}
+
+int main() {
+    float num1, num2;
+    cout << "Digite dois numeros reais: ";
+    cin >> num1 >> num2;
+
+    cout << "O maior valor e: " << maiorValor(num1, num2) << endl;
+    return 0;
+}
