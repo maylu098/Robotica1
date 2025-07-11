@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+struct Pessoa {
+    string nome;
+    int idade;
+    float altura;
+}
+
+
+void imprimirPessoa(Pessoa* p) {
+    cout << "Nome: " << p->nome << endl;
+    cout << "Idade: " << p->idade << " anos\n";
+    cout << "Altura: " << p->altura << " m\n";
+}
+
+int main() {
+    Pessoa p1;
+    cout << "Digite o nome: ";
+    getline(cin, p1.nome);
+    cout << "Digite a idade: ";
+    cin >> p1.idade;
+    cout << "Digite a altura: ";
+    cin >> p1.altura;
+
+    imprimirPessoa(&p1); // Passa o endereco da estrutura
+
+    return 0;
+}
