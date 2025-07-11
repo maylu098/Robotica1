@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int numero1 = 5;
+    int numero2 = 5;
+    int numero3 = 5;
+
+    
+    cout << "\nPassagem por Valor:" << endl;
+    dobrarPorValor(numero1);
+    cout << "Valor original apos funcao (valor): " << numero1 << endl;
+
+    
+    cout << "\nPassagem por Referencia:" << endl;
+    dobrarPorReferencia(numero2);
+    cout << "Valor original apos funcao (referencia): " << numero2 << endl;
+
+    
+    cout << "\nPassagem por Ponteiro:" << endl;
+    dobrarPorPonteiro(&numero3);
+    cout << "Valor original apos funcao (ponteiro): " << numero3 << endl;
+
+    return 0;
+}
